@@ -1,4 +1,4 @@
-%h3
-  = @post.caption
-#post
-  = image_tag @post.image.url(:medium)
+.row
+  %h3
+    = @post.caption
+    = image_tag @post.image.url(:medium)

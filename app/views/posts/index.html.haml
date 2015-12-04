@@ -1,5 +1,4 @@
-%h1 Instagem
-
-- @posts.each do |post|
-  - @post = post
-  = render :partial => 'show_post'
+.container-fluid
+  - @posts.each do |post|
+    - @post = post
+    = render :partial => 'show_post'
