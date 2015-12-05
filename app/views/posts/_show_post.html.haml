@@ -1,4 +1,8 @@
-.row
-  %h3
+.post
+  .post-head
+    .name
+      Tbjoern
+  .image.center-block
+    = link_to (image_tag @post.image.url(:medium), class:'img-responsive'), post_path(@post)
+  %p.caption
     = @post.caption
-    = image_tag @post.image.url(:medium)
